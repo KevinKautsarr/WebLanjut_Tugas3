@@ -10,11 +10,11 @@
 				<div class="col-md-4">&nbsp;</div>
 				<div class="col-md-4"><h3>Data Mahasiswa</h3>
 					<?php 
-
-						echo 'id:' . $rs['id'] . '<br/>';
-						echo 'NIM:' . $rs['nim'] . '<br/>';
-						echo 'Nama:' . $rs['nama'] . '<br/>';
-
+						echo 'id: ' . $rs['id'] . '<br/>';
+						echo 'NIM: ' . $rs['nim'] . '<br/>';
+						echo 'Nama: ' . $rs['nama'] . '<br/>';
+						// echo 'Create At: ' . $rs['created_at'] . '<br/>';
+						// echo 'Deleted Att:' . $rs['deleted_at'] . '<br/>';
 					?>
 				</div>
 				<div class="col-md-4">&nbsp;</div>

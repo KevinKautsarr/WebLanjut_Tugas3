@@ -33,6 +33,10 @@
 			case 'tampil-data' :
 				$controller->show_data();
 				break;
+// baru delete data
+			case 'hapus-data' :
+				$controller->delete();
+				break;
 
 			default : 
 				$controller->index();

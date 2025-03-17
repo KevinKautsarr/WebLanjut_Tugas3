@@ -12,11 +12,11 @@
 					<form method="post" action="/mvc-example/?act=simpan">
 					  <div class="form-group">
 					    <label for="exampleInputNim">NIM</label>
-					    <input type="text" class="form-control" id="exampleInputNim" name="nim" placeholder="NIM">
+					    <input type="text" class="form-control" id="exampleInputNim" name="nim" placeholder="NIM" required>
 					  </div>
 					  <div class="form-group">
 					    <label for="exampleInputNama">Nama</label>
-					    <input type="text" class="form-control" id="exampleInputNama" name="nama" placeholder="Nama">
+					    <input type="text" class="form-control" id="exampleInputNama" name="nama" placeholder="Nama" required>
 					  </div>
 
 					  <button type="submit" class="btn btn-default">Submit</button>

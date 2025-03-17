@@ -25,7 +25,9 @@
         function lihatData()
         {
 
-            $rs = $this->dbh->query("SELECT * FROM mahasiswa");
+            // $rs = $this->dbh->query("SELECT * FROM mahasiswa");
+            // return $rs;
+            $rs = $this->dbh->query("SELECT * FROM mahasiswa WHERE deleted_at IS NULL");
             return $rs;
         }
 
@@ -36,4 +38,11 @@
             $rs->execute([$id]);
             return $rs->fetch();// kalau hasil query hanya satu, gunakan method fetch() bawaan PDO
         }
+        function hapusData($id)
+        {
+            // $rs = $this->dbh->prepare("DELETE FROM mahasiswa WHERE id=?");
+            // $rs->execute([$id]);
+            $rs = $this->dbh->prepare("UPDATE mahasiswa SET deleted_at = NOW() WHERE id = ?");
+            $rs->execute([$id]);
+        }   
     }
