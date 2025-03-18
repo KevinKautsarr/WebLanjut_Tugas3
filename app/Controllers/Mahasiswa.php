@@ -42,8 +42,7 @@
             if (isset($_GET['i'])) {
             $id = $_GET['i'];
             $this->mhs->hapusData($id); // Panggil fungsi soft delete
-            header('Location: index.php?act=tampil-data'); // Redirect ke halaman daftar data
-            exit;
+            $this->index(); //controller dikembalikan ke method index setelah selesai mengakses method ini.
           }
         }
     }

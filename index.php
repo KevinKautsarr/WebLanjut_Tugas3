@@ -37,7 +37,6 @@
 			case 'hapus-data' :
 				$controller->delete();
 				break;
-
 			default : 
 				$controller->index();
 				break;
